@@ -16,23 +16,25 @@ CLI Task Manager — это простое консольное приложен
 
 1. Убедитесь, что у вас установлен Python (версия 3.6 и выше).
 2. Склонируйте репозиторий:
-bash
+```bash
    git clone https://github.com/yourusername/cli-task.git
    cd cli-task
+```
    
 
 3. Установите необходимые зависимости (если есть):
 
    
-bash
+```bash
    pip install -r requirements.txt
-   
+```
 
 ## Использование
 
 Запустите приложение из командной строки:
-bash
+```bash
 python cli_task.py <command> [options]
+```
 
 ## Идея взята с источника[https://roadmap.sh/projects/task-tracker]. Более подробно можно узнать там. Приложение практически полностью идентично.
 
