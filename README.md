@@ -29,12 +29,34 @@ CLI Task Manager — это простое консольное приложен
    pip install -r requirements.txt
 ```
 
-## Использование
-
-Запустите приложение из командной строки:
+4. Запустите приложение из командной строки:
 ```bash
 python cli_task.py <command> [options]
 ```
+
+## Пример Использование
+```bash
+# Adding a new task
+python main.py add "Buy groceries"
+# Output: Task added successfully (ID: 1)
+
+# Updating and deleting tasks
+python main.py update 1 "Buy groceries and cook dinner"
+python main.py delete 1
+
+# Marking a task as in progress or done
+python main.py mark-in-progress 1
+python main.py mark-done 1
+
+# Listing all tasks
+python main.py list
+
+# Listing tasks by status
+python main.py list done
+python main.py list todo
+python main.py list in-progress
+```
+
 
 ## Идея взята с [roadmap.sh](https://roadmap.sh/projects/task-tracker). Более подробно можно узнать там. Приложение практически полностью идентично.
 
