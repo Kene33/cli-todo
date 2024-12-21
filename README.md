@@ -36,7 +36,7 @@ CLI Task Manager — это простое консольное приложен
 python cli_task.py <command> [options]
 ```
 
-## Идея взята с источника[https://roadmap.sh/projects/task-tracker]. Более подробно можно узнать там. Приложение практически полностью идентично.
+## Идея взята с [roadmap.sh](https://roadmap.sh/projects/task-tracker). Более подробно можно узнать там. Приложение практически полностью идентично.
 
 
 ## Структура проекта
