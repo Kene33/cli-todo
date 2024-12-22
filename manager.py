@@ -26,8 +26,12 @@ class TaskManager:
         database.update_data(name, id, updated_time)
 
     def delete(self, id: int):
-        # Логика удаления задачи
-        database.delete_data(id)
+        deleted = database.delete_data(id)
+        
+        if deleted:
+            print(f"Task {id} deleted.")
+        else:
+            print("Task not found.")
         # wtf i did
 
     def get_all_tasks(self, mark):
