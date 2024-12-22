@@ -50,14 +50,21 @@ def delete_data(id: int):
     conn = sqlite3.connect('data/database.db')
     cursor = conn.cursor()
 
-    cursor.execute("""
-    DELETE FROM tasks
-    WHERE id = ?;
-    """, (id))
+    cursor.execute("SELECT * FROM tasks WHERE id = ?;", (id))
+    have_id = cursor.fetchall()
 
-    conn.commit()
-    conn.close()
 
+    if have_id:
+        cursor.execute("""
+        DELETE FROM tasks
+        WHERE id = ?;
+        """, (id))
+        conn.commit()
+        conn.close()
+
+        return True
+    else:
+        return False
 
 def mark_progress(status: str, id: int,):
     conn = sqlite3.connect('data/database.db')
