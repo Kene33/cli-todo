@@ -8,12 +8,8 @@ from colorama import Fore, Back, Style
 
 
 class TaskManager:
-    def __init__(self, name="None", id=int, status="todo", createdAt=int, updatedAt=int):
-        self.name = name
-        self.id = id
-        self.status = status
-        self.createdAt = createdAt
-        self.updatedAt = updatedAt
+    def __init__(self):
+        pass
 
 
     def add_task(self, name: str, id: int, status="todo"):
