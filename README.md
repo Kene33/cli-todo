@@ -17,7 +17,7 @@ CLI Task Manager — это простое консольное приложен
 1. Убедитесь, что у вас установлен Python (версия 3.6 и выше).
 2. Склонируйте репозиторий:
 ```bash
-   git clone https://github.com/kene33/cli-todo.git
+   git clone https://github.com/Kene33/cli-todo.git
    cd cli-todo
 ```
    
