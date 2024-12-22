@@ -62,7 +62,6 @@ def main():
     elif args.command == "delete":
         id = args.id
         manager.delete(id)
-        print(f"Task {id} deleted.")
         # wtf
 
     elif args.command == "list":
