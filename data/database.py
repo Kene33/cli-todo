@@ -46,7 +46,7 @@ def update_data(new_name, id, updatedAt):
     conn.close()
 
 
-def delete_data(id: int):
+def delete_data(id: int) -> bool:
     conn = sqlite3.connect('data/database.db')
     cursor = conn.cursor()
 
@@ -66,7 +66,7 @@ def delete_data(id: int):
     else:
         return False
 
-def mark_progress(status: str, id: int,):
+def mark_progress(status: str, id: int):
     conn = sqlite3.connect('data/database.db')
     cursor = conn.cursor()
 
@@ -106,7 +106,7 @@ def get_tasks(mark: str) -> list:
     return records
 
 
-def get_id():
+def get_id() -> int:
     conn = sqlite3.connect('data/database.db')
     cursor = conn.cursor()
 
